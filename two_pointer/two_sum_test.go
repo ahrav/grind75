@@ -1,4 +1,4 @@
-package main
+package two_pointer
 
 import (
 	"testing"
