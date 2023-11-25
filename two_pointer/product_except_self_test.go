@@ -27,7 +27,6 @@ func genLargeSlice() []int {
 	for i := 0; i < 10000; i++ {
 		nums = append(nums, i)
 	}
-	nums = append(nums, 0)
 
 	return nums
 }
