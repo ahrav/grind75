@@ -1,6 +1,6 @@
 package two_pointer
 
-func conainterWithTheMostWater(height []int) int {
+func containerWithTheMostWater(height []int) int {
 	if len(height) == 0 {
 		return 0
 	}

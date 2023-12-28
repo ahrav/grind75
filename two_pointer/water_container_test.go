@@ -19,7 +19,7 @@ func TestContainerWithMostWater(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		got := conainterWithTheMostWater(tc.height)
+		got := containerWithTheMostWater(tc.height)
 		assert.Equal(t, tc.want, got)
 	}
 }
