@@ -1,16 +1,16 @@
 package two_pointer
 
-func containerWithTheMostWater(height []int) int {
-	if len(height) == 0 {
+func containerWithTheMostWater(h []int) int {
+	if len(h) == 0 {
 		return 0
 	}
 
 	var area int
-	dist := len(height) - 1
-	lp, rp := 0, len(height)-1
+	dist := len(h) - 1
+	lp, rp := 0, len(h)-1
 
 	for lp <= rp {
-		l, r := height[lp], height[rp]
+		l, r := h[lp], h[rp]
 		tmp := min(l, r) * dist
 		if tmp > area {
 			area = tmp
